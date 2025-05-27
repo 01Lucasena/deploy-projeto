@@ -1,0 +1,28 @@
+.mensagem{
+    position: fixed;
+    top: 16px;
+    right: -300px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: right 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    opacity: 0;
+    cursor: pointer;
+    max-width: 300px;
+    z-index: 1000;
+
+}
+
+.mensagem.sucesso{
+    background-color: darkgreen;
+}
+
+.mensagem.erro{
+    background-color: darkred;
+}
+
+.mensagem-visivel{
+    right: 16px;
+    opacity: 1;
+}
